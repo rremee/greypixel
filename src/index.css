@@ -2,3 +2,19 @@
 
 @import "tailwindcss";
 
+@theme {
+    /*Font Family*/
+    --font-albert: 'Albert Sans', sans-serif;
+    --font-pixelify: 'Pixelify Sans', sans-serif;
+    /*Colors*/
+    --color-grey-1c: #1C1C1C;
+    --color-grey-6c: #6C6C6C;
+    --color-grey-4c: #4C4C4C;
+    --color-grey-5c: #5C5C5C;
+    --color-grey-44: #444444;
+    --color-grey-9c: #9C9C9C;
+    --color-grey-2c: #2C2C2C;
+    --color-grey-3c: #3C3C3C;
+    --color-grey-7c: #7C7C7C;
+    --color-grey-8c: #8C8C8C;
+}
