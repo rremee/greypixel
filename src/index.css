@@ -35,6 +35,10 @@ html {
     @apply bg-white font-albert font-normal text-normal leading-140 text-grey-5c;
 }
 
+@utility container {
+    @apply mx-auto max-w-340 px-3.5;
+}
+
 @utility h1 {
     @apply font-semibold text-h1 tracking-tighter leading-118 text-grey-1c;
 }
