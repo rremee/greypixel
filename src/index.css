@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300,400,500,600,700&family=Pixelify+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&family=Pixelify+Sans:wght@600&display=swap');
 
 @import "tailwindcss";
 
@@ -6,6 +6,17 @@
     /*Font Family*/
     --font-albert: 'Albert Sans', sans-serif;
     --font-pixelify: 'Pixelify Sans', sans-serif;
+    /*Font Sizes*/
+    --text-h1: clamp(3rem, calc(8vw + 1rem), 5rem);
+    --text-h2: clamp(0.8125rem, calc(3vw + .5rem), 0.9375rem);
+    --text-h3: clamp(2.2rem, calc(7vw + 1rem), 4.4rem);
+    --text-normal: clamp(1rem, calc(4vw + .75rem), 1.25rem);
+    /*Line Height*/
+    --leading-118: 118%;
+    --leading-110: 110%;
+    --leading-140: 140%;
+    /*Letter Spacing*/
+    --tracking-04: -0.04em;
     /*Colors*/
     --color-grey-1c: #1C1C1C;
     --color-grey-6c: #6C6C6C;
@@ -17,4 +28,21 @@
     --color-grey-3c: #3C3C3C;
     --color-grey-7c: #7C7C7C;
     --color-grey-8c: #8C8C8C;
+    --color-white: #FFFFFF;
+}
+
+html {
+    @apply bg-white font-albert font-normal text-normal leading-140 text-grey-5c;
+}
+
+@utility h1 {
+    @apply font-semibold text-h1 tracking-tighter leading-118 text-grey-1c;
+}
+
+@utility h2 {
+    @apply font-medium text-h2 leading-140 text-grey-5c;
+}
+
+@utility h3 {
+    @apply font-medium text-h3 tracking-04 leading-110 text-grey-44;
 }
