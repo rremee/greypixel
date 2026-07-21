@@ -45,6 +45,10 @@ a {
     @apply inline-block no-underline;
 }
 
+@utility wrapper {
+    @apply flex flex-col min-h-full overflow-clip;
+}
+
 @utility container {
     @apply mx-auto max-w-340 px-3.5;
 }

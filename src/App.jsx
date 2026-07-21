@@ -2,7 +2,12 @@ import Header from "./sections/Header.jsx";
 
 const App = () => {
 	return (
-		<Header />
+		<div className='wrapper'>
+			<Header />
+			<main>
+
+			</main>
+		</div>
 	)
 }
 export default App
