@@ -7,10 +7,12 @@
     --font-albert: 'Albert Sans', sans-serif;
     --font-pixelify: 'Pixelify Sans', sans-serif;
     /*Font Sizes*/
-    --text-h1: clamp(3rem, calc(8vw + 1rem), 5rem);
-    --text-h2: clamp(0.8125rem, calc(3vw + .5rem), 0.9375rem);
-    --text-h3: clamp(2.2rem, calc(7vw + 1rem), 4.4rem);
-    --text-normal: clamp(1rem, calc(4vw + .75rem), 1.25rem);
+    --text-h1: clamp(3rem, calc(6vw + 1rem), 5rem);
+    --text-h2: clamp(0.8125rem, calc(2vw + .5rem), 0.9375rem);
+    --text-h3: clamp(2.2rem, calc(6vw + 1rem), 4.4rem);
+    --text-nav-link: clamp(3.2rem, calc(5vw + 2rem), 4.6rem);
+    --text-normal: clamp(1rem, calc(1.2vw + .75rem), 1.25rem);
+    --text-logo: clamp(2.125rem, 1.5vw, 2.625rem);
     /*Line Height*/
     --leading-118: 118%;
     --leading-110: 110%;
@@ -32,7 +34,15 @@
 }
 
 html {
-    @apply bg-white font-albert font-normal text-normal leading-140 text-grey-5c;
+    @apply bg-white font-albert ;
+}
+
+body {
+    @apply font-normal leading-140 text-grey-5c text-normal;
+}
+
+a {
+    @apply inline-block no-underline;
 }
 
 @utility container {
@@ -49,4 +59,15 @@ html {
 
 @utility h3 {
     @apply font-medium text-h3 tracking-04 leading-110 text-grey-44;
+}
+@utility nav-link {
+    @apply font-medium text-nav-link tracking-04 leading-110 text-grey-44;
+}
+
+@utility logo {
+    @apply uppercase font-pixelify font-semibold text-grey-1c text-logo border border-grey-1c bg-white;
+}
+
+@utility burger-span {
+    @apply absolute left-0 block h-0.75 w-full bg-grey-1c rounded-full;
 }
